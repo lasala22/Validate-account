@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Account(acc) {
+            let account = /^[_a-z0-9]{6,}$/;
+            return acc.match(account);
+        }
+        console.log(Account("123abc_"));
+        console.log(Account("1234_"));
+        console.log(Account("123456"));
+        console.log(Account("abcde "));
+    </script>
+</body>
+</html>
